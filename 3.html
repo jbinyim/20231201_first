@@ -3,40 +3,13 @@
 <head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXV22DXSGR"></script>
-<script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="colors.js">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-RXV22DXSGR');
-    function nightDayHandler(self){
-        var target = document.querySelector('body');
-        if(self.value === 'night'){
-            target.style.backgroundColor = 'black';
-            target.style.color = 'white';
-            self.value = 'day';
-
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length){
-                alist[i].style.color = 'powderblue';
-                i = i + 1;
-            }
-
-        } else {
-            target.style.backgroundColor = 'white';
-            target.style.color = 'black';
-            self.value = 'night';
-
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length){
-                alist[i].style.color = 'blue';
-                i = i + 1;
-            }
-        }
-    }
-  
 
 </script>
 <title>WEB1 - JAVASCRIPT</title>
@@ -47,9 +20,6 @@
 <body>
     
     <h1><a href="index.html">WEB</a></h1>
-    <input type="button" value="night" onclick="
-        nightDayHandler(this);
-    ">
     <input type="button" value="night" onclick="
         nightDayHandler(this);
     ">

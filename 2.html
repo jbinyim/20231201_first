@@ -3,7 +3,8 @@
 <head>
         <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXV22DXSGR"></script>
-    <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="colors.js">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -16,6 +17,9 @@
 </head>
 <body> 
     <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="night" onclick="
+        nightDayHandler(this);
+    ">
     <div id="grid">
         <ol>
             <li><a href="1.html">HTML</a></li>
